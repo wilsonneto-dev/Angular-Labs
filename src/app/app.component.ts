@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'skillup-front';
+  updatedValue: string = "";
+  update(name: string) {
+    this.updatedValue = name;
+  }
 }
